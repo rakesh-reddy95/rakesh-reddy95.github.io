@@ -1,0 +1,98 @@
+### Site Settings ###
+title               : Rakesh reddy
+description         : >- 
+                      I turn tea :tea: into code,     
+                      Want to discuss ?? Always up for Robotics, Artificial Intelligence, Quantum Physics, Neuroscience & Life!!! 
+baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
+repository          : udaygirish/udaygirish.github.io     # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
+remote_theme        : udaygirish/portfolYOU
+
+
+### Plugins ###
+plugins:
+  - jemoji
+
+
+### Navbar Settings ###
+nav_exclude:                                            # The following paths are excluded from navbar
+  - pages/tags.html
+  - pages/404.html
+  - pages/index.md
+  - pages/testblog.md
+  - pages/fquotes.md
+  - pages/status.md
+  - pages/contact.md
+
+  #  - pages/contact.html
+
+### Author Info ###
+author:
+  name              : Rakesh Reddy
+  image             : ./assets/uday.png
+# behance           : your_username
+# dribbble          : your_username
+  email             : mallu.rakeshreddy95@gmail.com  
+# facebook          : your_username
+  github            : rakeshreddy95
+# gitlab            : your_username
+  instagram         : rakeshreddy1409
+  kaggle            : udaygirish
+  linkedin          : rakesh reddy
+#  medium           : udaygirish
+# soundcloud        : your_username
+# spotify           : your_username
+# stackoverflow     : your_user_id
+# tumblr            : your_username.tumblr.com
+# twitch            : your_username
+  twitter           : UdayGirishM
+# vimeo             : your_username
+# youtube           : your_channel_name
+#  quora             : Uday-Girish-Maradana
+  resume            : Uday_Girish_CV.pdf
+  
+
+### Posts ###
+permalink: /blog/:title
+
+
+### Collections ###
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+
+### Disqus ###                        
+disqus:        # Your website Shortname on disqus
+  shortname: https-udaygirish-github-io  
+
+### Analytics ###
+analytics:
+  enabled: true                                        # Set true to enable analytics
+  google:
+    tracking_id: UA-175164060-1
+
+
+### Defaults for collections ###
+defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      comments: true                                  # Set to true to enable disqus comments
+  - scope:
+      path: ""
+      type: "skills"
+    values:
+      comments: false 
+
+### Exclude from processing ###
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - LICENSE
+  - "*.log"
